@@ -7,6 +7,7 @@
 $RootLocation = "C:\LaunchPad"
 
 #-- Are we running from the Root Location?
+# INSERT CHECK IF RUNNING FROM ROOT HERE, IF NOT COPY, PROMPT, AND EXIT
 
 #-- Logging Folder
 $LoggingFolder = [Environment]::GetFolderPath("Desktop") + "\Logging-Output"
@@ -724,7 +725,7 @@ function ConnectPKI {
     $LogFile = UpdateLogFile
     
     $File = $SettingSecureCrtPath
-    $Arguments = " /LOG `"" +  + "`" /T /SSH2 /ACCEPTHOSTKEYS /AUTH keyboard-interactive " + $TextBoxHostnameConnect.Text
+    $Arguments = " /LOG `"" +  + "`" /T /SSH2 /ACCEPTHOSTKEYS /AUTH publickey " + $TextBoxHostnameConnect.Text
     Start-Process $File $Arguments
     #Write-Host $File $Arguments
 }

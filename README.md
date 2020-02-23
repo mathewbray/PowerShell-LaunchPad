@@ -1,6 +1,6 @@
 # LaunchPad PS 
 
-One place to launch any connection, link, script, reference, or application.  Uses SecureCRT for SSH.
+One place to launch any connection, link, script, reference, or application.  Uses SecureCRT for SSH and Serial connections.
 
 ![Main](https://github.com/mathewbray/PowerShell-LaunchPad/raw/master/readme/Main.png)
 ![Icons](https://github.com/mathewbray/PowerShell-LaunchPad/raw/master/readme/Icons.png)
